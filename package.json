@@ -1,0 +1,31 @@
+{
+  "name": "rest-api-testing-demo",
+  "version": "1.0.0",
+  "description": "REST API test automation with Playwright (API mode) against a bundled mock service - CRUD, auth, status codes and JSON-schema validation, runs hermetically in CI.",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "api-testing",
+    "rest-api",
+    "playwright",
+    "test-automation",
+    "qa-automation",
+    "json-schema",
+    "ci"
+  ],
+  "author": "Nick Liapin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "typescript": "^5.6.2"
+  }
+}
